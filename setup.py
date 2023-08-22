@@ -5,10 +5,10 @@ setup(
     packages=['onepassword_secrets_backend'],
     version='0.0.1',
     license='MIT',
-    description='Custom 1password secrets backend for airflow',
+    description='README.md',
     author='nmg-infra',
     url='https://github.com/namogoo/onepassword_secrets_backend',
-    download_url='',
+    download_url='https://github.com/namogoo/onepassword_secrets_backend/archive/refs/tags/v_1.tar.gz',
     keywords=['1password', 'onepassword', 'secrets', 'backend', 'airflow'],
     install_requires=[
         'onepasswordconnectsdk==1.3.0',

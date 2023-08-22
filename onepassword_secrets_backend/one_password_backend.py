@@ -14,6 +14,15 @@ class OnePasswordSecretsBackend(BaseSecretsBackend):
                  variables_prefix: str = None,
                  config_prefix: str = None,
                  **kwargs):
+        """
+        supports retrieving secrets from plain text notes only!
+
+        :param vault: vault to retrieve secrets from - must
+        :param connections_prefix: prefix to look for connections (aka when trying to retrieve `conn_id`, will look in 1password for "connection_prefix/conn_id") , if None skip this backend when looking for connections
+        :param variables_prefix: prefix to look for variables (aka when trying to retrieve `VARIABLE`, will look in 1password for "variables_prefix/VARIABLE") , if None skip this backend when looking for variables
+        :param config_prefix: prefix to look for configurations (aka when trying to retrieve `config`, will look in 1password for "config_prefix/config") , if None skip this backend when looking for configurations
+        :param kwargs:
+        """
         super().__init__(**kwargs)
         self.vault = vault
         self.connection_prefix = connections_prefix
