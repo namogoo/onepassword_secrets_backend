@@ -1,2 +1,4 @@
 # onepassword_secrets_backend
-custom 1password secrets backend for airflow
+Custom 1password secrets backend for airflow. Intended to store connections/variables/configs in 1password vaults.
+
+Secrets should be stored in 1password as a plain note text!
